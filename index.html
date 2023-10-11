@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <title>ToDo List</title>
+</head>
+
+<body>
+
+    <div class="bg">
+        <div class="bg-light"><img class="imagem" src="./src/images/bg-desktop-light.jpg" alt="fundo claro"></div>
+        <div class="bg-dark"><img class="imagem" src="./src/images/bg-desktop-dark.jpg" alt="fundo escuro"></div>
+    </div>
+    <div class="container"><!-- englobar geral -->
+        <header>
+            <h1>T O D O</h1>
+            <input type="checkbox" id="theme">
+        </header>
+        <main>
+            <div class="create light">
+                <button id="createTask"></button>
+                <input type="text" id="taskName" placeholder="Create a new task">
+            </div>
+
+            <ul class="list light">
+
+            </ul>
+            <div class="info light">
+                <div><span id="left"></span> items left</div>
+                <div class="info-nav  light">
+                    <label>
+                        <input type="radio" name="filter" id="all" checked>
+                        <span>All</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="filter" id="active">
+                        <span>Active</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="filter" id="completed">
+                        <span>Completed</span>
+                    </label>
+                </div>
+                <span id="clear">Clear Completed</span>
+            </div>
+
+
+        </main>
+
+        <footer>
+            <p>Drag and drop to reorder list</p>
+        </footer>
+
+    </div>
+
+
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
